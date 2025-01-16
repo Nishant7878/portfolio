@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #87CEEB, #B0E0E6); /* Soft gradient background */
+            color: #1A1A2E;
+        }
+
+        header {
+            background-color: #3742FA; /* Vibrant blue header */
+            color: #FFFFFF;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #FFFFFF; /* White links */
+            font-size: 1em;
+            font-weight: 400;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700; /* Golden hover effect */
+        }
+
+        #hero {
+            text-align: center;
+            padding: 100px 20px;
+            color: #1A1A2E;
+            background-color: #F0F8FF; /* Soft blue hero section */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 12px 25px;
+            background-color: #FFD700;
+            color: #1A1A2E;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #FFC300;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #3742FA;
+        }
+
+        section p {
+            font-size: 1.1em;
+            color: #1A1A2E;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .project {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #F0F8FF; /* Soft blue footer */
+            color: #1A1A2E;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #3742FA;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #1A1A2E;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">My Portfolio</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="Nishant Portfolio.jpg" alt="Your Photo" style="width:200px; border-radius:100%; margin-bottom:40px;">
+        <p>
+            I am currently pursuing a Bachelor's degree in Information Technology. I have a passion for technology and problem-solving, which drives me to create innovative and efficient solutions. 
+            My areas of interest include web development, programming, and exploring emerging technologies. 
+            In my free time, I enjoy learning new skills, collaborating on exciting projects, and enhancing my knowledge to stay updated in this fast-paced field.
+        </p>
+    </section>
+    
+
+    <section id="hero">
+        <h2>Hi, I'm Nishant</h2>
+        <p>Aspiring IT Professional with a passion for technology and web development. I am dedicated to improving systems, optimizing performance, and creating solutions that meet both user needs and business goals. My focus is on developing efficient, scalable web applications and staying up to date with the latest industry trends.</p>
+        <a href="#projects" class="cta-button" onclick="scrollToSection(event, 'projects')">View My Work</a>
+    </section>
+    
+    <script>
+        function scrollToSection(event, sectionId) {
+            event.preventDefault();
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p><a href="airplane2.html" target="_blank">View Project 1</a></p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p><a href="https://github.com/Nishant7878/C-Programming/blob/main/Bus%20Ticket%20Reservation%20App.pdf" target="_blank">View Project 2</a></p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">nishant787rana@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/nishant-rana-9a85a3344/" target="_blank">LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>© 2025 Nishant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
